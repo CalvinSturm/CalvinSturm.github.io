@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+    .container {
+        max-height: inherit;
+        max-width: 768px;
+    }
+    
+}

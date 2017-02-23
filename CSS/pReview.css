@@ -1,0 +1,114 @@
+body {
+    font-family: 'Oxygen', sans-serif;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E5E5E5;
+
+}
+
+#header {
+    background-color: #E5E5E5;
+    color: black;
+    text-align: center;
+    padding: 5px;
+    clear: both;
+
+}
+
+footer {
+    background-color: black;
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 5px;	
+
+}
+
+#mainHeader {
+    text-align: center;
+
+}
+
+iframe {
+    width: 80%;
+    height: 600px;
+    margin-left: auto;
+    border: 20px groove #7F7F7F;
+
+}
+
+header {
+    margin-left: 25px;
+
+}
+
+aside {
+    float: right;
+    padding-top: 200px;
+
+}
+
+a:hover {
+    text-decoration: none;
+
+}
+
+a:visited {
+    text-decoration: none;
+
+}
+
+a:active {
+    text-decoration: none;
+
+}
+
+h1 {
+    color: #404040;
+
+}
+
+a:hover {
+    text-decoration: line-through;
+
+}
+
+p {
+    line-height: 200%;
+
+}
+
+#linkedIn {
+    width: 20px;
+  
+}
+
+#linkedIn:hover {
+    background-color: blue;
+}
+
+.visitLink {
+    display: none;
+    text-align: center;
+    width: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+    aside {
+        display: none;
+    }
+    
+    .visitLink {
+        display:block;
+    }
+    
+    header {
+        text-align: center;
+    }
+    
+    section {
+        text-align: center;
+    }
+    
+}

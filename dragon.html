@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>        
+        <link rel="icon" type="image/png" href="images/myIcon.png"/>
+        <title>Dragon Slayer</title>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>      
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="JS/dragon.js"></script> 
+        <script src="JS/resume.js"></script>
+               
+        <link rel="stylesheet" type="text/css" href="CSS/dragon.css">
+    </head>
+        <body onload="load()">
+            <div id="header"><h1>Click the Dragon to attack!</h1></div>
+            <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand" href="index.html">CS</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li><a href="pdf/resume2017.pdf" class="view-pdf">Resume</a></li>
+                            <li><a href="pReview.html">Reviews</a></li>
+                            <li><a href="slideShow.html">Slide show</a></li>
+                            <li class="active"><a href="dragon.html">Dragon</a></li>
+                            <li><a href="http://cuesta-cis-204.dozuki.com/Guide/Introduction+to+MapKit+in+Swift/40">iOS</a></li> 
+                            <li><a href="photoshop.html">Photoshop</a></li> 
+                            <li><a href="mailto:calvin@calvinsturm.com">Contact</a></li> 
+                        </ul>                         
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="https://www.linkedin.com/in/calvinsturm/"><img id="linkedIn" src="images/Linkedin-PNG.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <center>          
+                <h1 id="title">Dragon Slayer</h1>
+                <h2 id="dragonHPTitle">Dragon's health</h2>
+                <h3 id="dragonHP"></h3>
+                <p id="dragonStat"></p>
+                <a onclick="attackDragon()"><img src="images/dragon.png" id="dragon"></a><br>
+                <p id="heroStat"></p>
+                <h2 id="heroHPTitle">Heroes' health</h2>
+                <h3 id="heroHP"></h3>
+                
+                <button onclick="buyRation()">Buy ration 1000gp</button>
+                
+                <button id="rationButton" onclick="eat()">Eat ration</button>
+                <h3 id="gold"></h3>
+            </center>
+            <div id="footer">
+		      Calvinsturm © 2017
+		  </div>
+        </body>       
+ </html>

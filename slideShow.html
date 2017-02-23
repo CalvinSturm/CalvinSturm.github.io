@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/png" href="images/myIcon.png"/>
+        <title>Slide Show</title>
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="CSS/slideShow.css">
+        <!-- Latest compiled JavaScript -->
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="JS/slideShow.js"></script>
+        <script src="JS/resume.js"></script>
+    </head>
+
+    <body onload="loadPictures()">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="index.html">CS</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                            <li><a href="pdf/resume2017.pdf" class="view-pdf">Resume</a></li>
+                            <li><a href="pReview.html">Reviews</a></li>
+                            <li class="active"><a href="slideShow.html">Slide show</a></li>
+                            <li><a href="dragon.html">Dragon</a></li>
+                        <li><a href="http://cuesta-cis-204.dozuki.com/Guide/Introduction+to+MapKit+in+Swift/40">iOS</a></li> 
+                        <li><a href="photoshop.html">Photoshop</a></li> 
+                        <li><a href="mailto:calvin@calvinsturm.com">Contact</a></li> 
+                    </ul>                        
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="https://www.linkedin.com/in/calvinsturm/"><img id="linkedIn" src="images/Linkedin-PNG.png"></a></li>
+                    </ul>                
+                </div>
+            </div>
+        </nav>
+
+        <div id="theSlide" align="center">
+            <h1>Slide Show</h1>
+            <img id="slideShow" name="slideShow">
+            <br>
+            <h3 id="caption"></h3>
+            <br>
+            <button onclick="prevSlide()">Previous Slide</button>
+            <button onclick="nextSlide()">Next Slide</button>     
+            <button onclick="startSlide()">Start Slide Show</button>
+            <button onclick="stopSlide()">Stop Slide Show</button>
+            <button id="count"></button>
+        </div>
+
+        <div id="footer">
+            Calvinsturm © 2017
+        </div>
+
+    </body>
+</html>

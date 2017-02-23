@@ -1,0 +1,124 @@
+body {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #E5E5E5;
+}
+
+
+#header {
+    background-color:#E5E5E5;
+	color:black;
+    text-align:center;
+    padding:5px;
+}
+
+heading, button {
+    font-family: monospace;
+
+}
+
+#dragon {
+    height: auto;
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+    
+}
+
+#dragon:hover {
+    background-color: red;
+
+}
+
+#dragonHPTitle {
+    position: relative;
+    right: 350px;
+    top: 10px;
+    color: firebrick;
+    
+}
+
+#dragonHP {
+    position: relative;
+    right: 350px;
+}
+
+#heroHP {
+    position: relative;
+    left: 350px;
+
+}
+
+#heroHPTitle {
+    position: relative;
+    left: 350px;
+    top: 10px;
+    color: darkslateblue;
+}
+
+#dragonStat {
+    position: relative;
+    right: 350px;
+
+    
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+
+#heroStat {
+    position: relative;
+    left: 350px;
+
+}
+
+#linkedIn {
+    width: 20px;
+  
+}
+
+#linkedIn:hover {
+    background-color: blue;
+}
+
+@media screen and (max-width: 925px) {
+    #dragonHP, #dragonHPTitle, #heroHP,  #heroHPTitle {
+        text-align: center;
+        
+    }
+    
+    #dragonHPTitle {
+        position: relative;
+        right: 0;
+        top: 0;
+
+    }
+
+    #dragonHP {
+        position: relative;
+        right: 0;
+    }
+
+    #heroHP {
+        position: relative;
+        left: 0;
+    }
+
+    #heroHPTitle {
+        position: relative;
+        left: 0;
+
+    }
+}
+@media screen and (max-width: 320px) {
+    #dragon {
+        height: 100%;
+        width: 100%;
+    }
+}
